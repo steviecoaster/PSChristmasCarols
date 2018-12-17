@@ -92,7 +92,7 @@ function Resolve-Note {
         if ($DurationScale -ge 1) {
             $beep = "b$('e' * $DurationScale)p"
         }
-        elseif ($DurationScale -eq 0.5 {
+        elseif ($DurationScale -eq 0.5) {
             $beep = 'bp'
         }
         else {
