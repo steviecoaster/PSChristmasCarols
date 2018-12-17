@@ -66,8 +66,6 @@ function Resolve-Note {
             '2'  = 8
             '1'  = 16
         }
-        
-        $Multiplier = 1
     }
     process {
         $Pitch = switch ($Octave) {
