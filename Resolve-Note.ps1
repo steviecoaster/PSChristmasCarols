@@ -15,7 +15,17 @@ function Resolve-Note {
 
         [Parameter(Position = 2, ValueFromPipelineByPropertyName)]
         [Alias('Length')]
-        [ValidateSet('16', '8', '4', '4.', '2', '2.', '1')]
+        [ValidateScript(
+            {
+                $_ -match '(64|32|16|8|4|2|1).*'
+            }
+        )]
+        [ArgumentCompleter(
+            {
+                param($Command, $Parameter, $WordToComplete, $CommandAst, $FakeBoundParams)
+                return @('1','2','4','8','16','32','64') -match "^$WordToComplete"
+            }
+        )]
         [string]
         $NoteLength = '4',
 
@@ -47,14 +57,16 @@ function Resolve-Note {
         }
 
         $NoteDuration = @{
-            '16' = 125
-            '8'  = 250
-            '4'  = 500
-            '4.' = 750
-            '2'  = 1000
-            '2.' = 1500
-            '1'  = 2000
+            '64' = 0.25
+            '32' = 0.5
+            '16' = 1
+            '8'  = 2
+            '4'  = 4
+            '2'  = 8
+            '1'  = 16
         }
+        
+        $Multiplier = 1
     }
     process {
         $Pitch = switch ($Octave) {
@@ -68,8 +80,13 @@ function Resolve-Note {
                 $BaseNoteFrequencies[$Note]
             }
         }
-
-        $Duration = $NoteDuration[$NoteLength]
+        
+        if ($NoteLength -match '\.') {
+            $DotCount = ($NoteLength -replace '[^\.]').Length
+            $Multiplier = [Math]::Pow( 1.5, $DotCount )
+        }
+        
+        $Duration = $NoteDuration[$NoteLength -replace '\.'] * $Multiplier * $BeatsPerMinute
 
         if ($PSCmdlet.ShouldProcess(('BEEPing Pitch {0} Duration {1}' -f $Pitch, $Duration))) {
             [Console]::Beep($Pitch, $Duration)
