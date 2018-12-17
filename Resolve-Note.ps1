@@ -2,7 +2,7 @@ function Resolve-Note {
     [OutputType([void])]
     [CmdletBinding(SupportsShouldProcess, ConfirmImpact = 'Low')]
     param(
-        [Parameter(Position = 0, Mandatory, ValueFromPipeline)]
+        [Parameter(Position = 0, Mandatory, ValueFromPipeline,ValueFromPipelineByPropertyName)]
         [Alias('♪', '♫')]
         [ValidateSet('C', 'C#', 'Db', 'D', 'D#', 'Eb', 'E', 'F', 'F#', 'Gb', 'G', 'G#', 'Ab', 'A', 'A#', 'Bb', 'B')]
         [string]
