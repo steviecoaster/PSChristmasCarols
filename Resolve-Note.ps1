@@ -4,7 +4,7 @@ function Resolve-Note {
     param(
         [Parameter(Position = 0, Mandatory, ValueFromPipeline,ValueFromPipelineByPropertyName)]
         [Alias('♪', '♫')]
-        [ValidateSet('C', 'C#', 'Db', 'D', 'D#', 'Eb', 'E', 'F', 'F#', 'Gb', 'G', 'G#', 'Ab', 'A', 'A#', 'Bb', 'B')]
+        [ValidateSet('C', 'C#', 'Db', 'D', 'D#', 'Eb', 'E', 'F', 'F#', 'Gb', 'G', 'G#', 'Ab', 'A', 'A#', 'Bb', 'B', '-')]
         [string]
         $Note,
 
@@ -54,6 +54,7 @@ function Resolve-Note {
             'A#' = 466.164
             'Bb' = 466.164
             'B'  = 493.883
+            '-'  = 37
         }
 
         $NoteDuration = @{
@@ -84,6 +85,9 @@ function Resolve-Note {
         if ($NoteLength -match '\.') {
             $DotCount = ($NoteLength -replace '[^\.]').Length
             $Multiplier = [Math]::Pow( 1.5, $DotCount )
+        }
+        else {
+            $Multiplier = 1
         }
         
         $DurationScale = $NoteDuration[$NoteLength -replace '\.']
