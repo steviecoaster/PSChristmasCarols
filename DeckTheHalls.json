@@ -1,0 +1,299 @@
+[
+    {
+        "Note": "D",
+        "NoteLength": "4.",
+        "Octave": "1"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4."
+    },
+    {
+        "Note": "A",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "F#",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "2"
+    },
+    {
+        "Note": "D",
+        "NoteLength": "4.",
+        "Octave": "1"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4."
+    },
+    {
+        "Note": "A",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "F#",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "2"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4."
+    },
+    {
+        "Note": "B",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "4",
+        "Octave": "1"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4."
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "D",
+        "NoteLength": "4",
+        "Octave": "1"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "8"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "D",
+        "NoteLength": "4",
+        "Octave": "1"
+    },
+    {
+        "Note": "E",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "F#",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4",
+        "Octave": "1"
+    },
+    {
+        "Note": "F#",
+        "NoteLength": "4",
+        "Octave": "1"
+    },
+    {
+        "Note": "E",
+        "NoteLength": "4",
+        "Octave": "1"
+    },
+    {
+        "Note": "D",
+        "NoteLength": "2",
+        "Octave": "1"
+    },
+    {
+        "Note": "D",
+        "NoteLength": "4.",
+        "Octave": "1"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "E",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "E",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "E",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "E",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "D",
+        "NoteLength": "4.",
+        "Octave": "1"
+    },
+    {
+        "Note": "C",
+        "NoteLength": "8",
+        "Octave": "1"
+    },
+    {
+        "Note": "B",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "A",
+        "NoteLength": "4"
+    },
+    {
+        "Note": "G",
+        "NoteLength": "2"
+    }
+]
