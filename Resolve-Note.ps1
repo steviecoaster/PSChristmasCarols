@@ -54,7 +54,7 @@ function Resolve-Note {
             'A#' = 466.164
             'Bb' = 466.164
             'B'  = 493.883
-            'R'  = 37
+            'R'  = 0
         }
 
         $NoteDuration = @{
@@ -102,7 +102,12 @@ function Resolve-Note {
         }
 
         if ($PSCmdlet.ShouldProcess($("$Pitch Hz"), $beep)) {
-            [Console]::Beep($Pitch, $Duration)
+            if ($Pitch -ne 0) {
+                [Console]::Beep($Pitch, $Duration)
+            }
+            else {
+                Start-Sleep -Milliseconds $Duration
+            }
         }
     }
 }
