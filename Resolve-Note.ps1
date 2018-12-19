@@ -79,7 +79,7 @@ function Resolve-Note {
                 $BaseNoteFrequencies[$Note]
             }
         }
-        
+
         if ($NoteLength -match '\.') {
             $DotCount = ($NoteLength -replace '[^\.]').Length
             $Multiplier = [Math]::Pow( 1.5, $DotCount )
@@ -87,7 +87,7 @@ function Resolve-Note {
         else {
             $Multiplier = 1
         }
-        
+
         $DurationScale = $NoteDuration[$NoteLength -replace '\.']
         $Duration = $DurationScale * $Multiplier * $BeatsPerMinute
 
@@ -100,8 +100,8 @@ function Resolve-Note {
         else {
             $beep = 'b'
         }
-        
-        if ($PSCmdlet.ShouldProcess(('[{0} Hz] {1}' -f $Pitch, $beep))) {
+
+        if ($PSCmdlet.ShouldProcess($Pitch, $beep)) {
             [Console]::Beep($Pitch, $Duration)
         }
     }
