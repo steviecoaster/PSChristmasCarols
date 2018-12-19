@@ -101,7 +101,7 @@ function Resolve-Note {
             $beep = 'b'
         }
 
-        if ($PSCmdlet.ShouldProcess($Pitch, $beep)) {
+        if ($PSCmdlet.ShouldProcess($("$Pitch Hz"), $beep)) {
             [Console]::Beep($Pitch, $Duration)
         }
     }
